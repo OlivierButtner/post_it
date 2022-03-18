@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Post-it</title>
+</head>
+
+<body>
+
+<script>
+
+    let app = new Vue({
+        el: "#app",
+        data: {
+            postIts: ["id1", "id2", "id3"],
+            methods: {
+                postItDisplay: function (postIt) {
+                    localStorage.setItem("title", "note");
+                    console.log("j'affiche");
+                },
+                checked: function (postIt) {
+                    <!-- envoi le post it dans la zone checked -->
+                    alert();
+                },
+
+            }
+        }
+    })
+</script>
+</body>
+</html>
